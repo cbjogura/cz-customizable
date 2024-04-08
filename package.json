@@ -1,6 +1,6 @@
 {
-  "version": "0.0.0-development",
-  "name": "cz-customizable",
+  "version": "0.0.1",
+  "name": "@ce/cz-customizable",
   "description": "Commitizen customizable adapter following the conventional-changelog format.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -16,10 +16,10 @@
     "prettier": "prettier --single-quote --trailing-comma es5 --write '*.js' 'spec/**/*.js'",
     "commit": "npm run lint && npm run test && ./standalone.js"
   },
-  "homepage": "https://github.com/leoforfree/cz-customizable",
+  "homepage": "https://github.com/cbjogura/cz-customizable",
   "repository": {
     "type": "git",
-    "url": "https://github.com/leoforfree/cz-customizable.git"
+    "url": "https://github.com/cbjogura/cz-customizable"
   },
   "author": "Leonardo Correa <leonardoanalista@gmail.com>",
   "contributors": [
@@ -35,9 +35,11 @@
     "word-wrap": "^1.2.3"
   },
   "devDependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.0.0",
     "@babel/core": "^7.18.6",
     "@babel/preset-env": "^7.18.6",
     "babel-jest": "^28.1.2",
+    "commander": "12.0.0",
     "commitizen": "^4.2.4",
     "eslint": "^8.19.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -46,6 +48,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "ghooks": "^2.0.4",
     "jest": "^28.1.2",
+    "npm-tools": "file:tools/npm-tools",
+    "npm-profile": "9.0.0",
     "prettier": "^2.7.1",
     "semantic-release": "^19.0.3"
   },

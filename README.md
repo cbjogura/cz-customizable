@@ -158,6 +158,7 @@ Here are the options you can set in your `.cz-config.js`:
 * **upperCaseSubject**: { boolean, default false }: Capitalizes first subject letter if set to `true`
 * **askForBreakingChangeFirst**: { boolean, default false }: It asks for breaking change as first question when set to `true`
 * **usePreparedCommit**: { boolean, default false }: It re-uses commit from ./.git/COMMIT_EDITMSG when set to `true`
+* **defaultTicketNumberPlaceHolder**: { string, default '' }: If set and no ticket number is provided it will use the placeholder value otherwise it will append the default value of '' (useful if there is a commit hook to replace the ticket number based on the branch having a ticket number in it)
 
 ## Related tools
 - (https://github.com/commitizen/cz-cli)

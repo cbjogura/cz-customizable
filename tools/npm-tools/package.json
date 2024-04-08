@@ -1,0 +1,9 @@
+{
+  "bin": {
+    "npmrc-manager": "npmrc-manager/npmrc-manager-cli.mjs",
+    "artifactory-manager": "artifactory-npm-auth/artifactory-npm-auth-util-cli.mjs",
+    "publishEverywhere": "./publishEverywhere.sh",
+    "publishLocally": "./publishLocally.sh",
+    "publishCi": "./publishCi.sh"
+  }
+}

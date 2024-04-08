@@ -31,6 +31,7 @@ module.exports = {
   isTicketNumberRequired: false,
   ticketNumberPrefix: 'TICKET-',
   ticketNumberRegExp: '\\d{1,5}',
+  defaultTicketNumberPlaceHolder: 'TS-XXXX', // if no ticket number is provided, and this config value is set, then use this placeholder
 
   // it needs to match the value for field type. Eg.: 'fix'
   /*

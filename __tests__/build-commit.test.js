@@ -105,4 +105,18 @@ line 2`;
     // eslint-disable-next-line prettier/prettier, no-useless-escape
     expect(buildCommit(altAnswers, {})).toEqual('feat(app): th\\\"is i\'s a n\\`ew \\\\$ f\\<ea\\>ture \\&');
   });
+
+  it('should add the default ticket placeholder if one is provided', () => {
+    const answersNoScope = {
+      type: 'feat',
+      subject: 'this is a new feature',
+    };
+    const options = {
+      typePrefix: '[',
+      typeSuffix: ']',
+      subjectSeparator: ' ',
+      defaultTicketNumberPlaceHolder: 'TS-XXXX',
+    };
+    expect(buildCommit(answersNoScope, options)).toEqual('[feat] TS-XXXX this is a new feature');
+  });
 });
